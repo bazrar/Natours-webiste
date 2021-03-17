@@ -344,6 +344,32 @@ body {
           transform: scale(0.9);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.8);
+          box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.feature-box:hover {
+  -webkit-transform: translateY(-2rem) scale(1.1);
+          transform: translateY(-2rem) scale(1.1);
+}
+
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#55c57a), to(#7ed56f));
+  background-image: linear-gradient(to right, #55c57a, #7ed56f);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.3)), to(rgba(40, 180, 133, 0.3))), url(../img/hero.jpg);
@@ -425,5 +451,19 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.5)), to(rgba(40, 180, 133, 0.5))), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url(../img/nat-4.jpg);
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+
+.section-features > * {
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
 }
 /*# sourceMappingURL=main.css.map */
