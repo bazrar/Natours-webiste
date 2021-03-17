@@ -53,3 +53,34 @@
     animation-fill-mode: backwards;
   }
 }
+
+.btn-tertiary {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    padding: 1rem 3px;
+    border-bottom: 2px solid $color-primary;
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
+  }
+}
+
+.btn-green {
+  color: $color-primary;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
