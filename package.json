@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass -w scss/ -o dist/css/ --recursive "
+    "compile:scss": "node-sass -w scss/ -o scss/ --recursive "
   },
   "author": "rejan",
   "license": "ISC",

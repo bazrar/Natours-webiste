@@ -61,7 +61,8 @@
     text-decoration: none;
     text-transform: capitalize;
     font-size: 1.6rem;
-    padding: 1rem 3px;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
     border-bottom: 2px solid $color-primary;
     transition: all 0.3s ease-out;
   }
@@ -82,5 +83,57 @@
   &:hover {
     background-color: $color-primary;
     color: $color-white;
+  }
+}
+
+.btn-secondary {
+  &:link,
+  &:visited {
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.7rem 3rem;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    border-radius: 3rem;
+    transition: all 0.4s ease-in;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
+
+    &:after {
+      transform: scale(1.8);
+      background-color: rgba($color-primary, 0.8);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
+  }
+
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 3rem;
+    transition: all 0.3s ease-in;
+  }
+}
+
+.btn-form {
+  background-color: $color-primary;
+  color: $color-white;
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary;
   }
 }

@@ -1,0 +1,50 @@
+.footer {
+  //   z-index: 200;
+  position: relative;
+  margin-top: -9rem;
+  height: 60vh;
+  padding: 25rem 0;
+  background-color: #333;
+  &__logo-box {
+    position: absolute;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-5.5rem);
+    height: 5.5rem;
+  }
+
+  &__logo {
+    height: 100%;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $color-grey-light-1;
+    font-size: 1.7rem;
+    padding: 3px 7px;
+
+    border-radius: 5px;
+
+    color: $color-grey-dark-1;
+    &:not(:last-child) {
+      margin-right: 7rem;
+    }
+
+    &:hover {
+      transition: all 0.5s ease-out;
+      transform: skewY(-7deg) scale(1.1);
+      background: linear-gradient(-45deg, $color-primary-light, $color-primary);
+      color: $color-white;
+    }
+  }
+
+  &__copyright {
+    text-transform: capitalize;
+  }
+}
